@@ -1,0 +1,208 @@
+.detail {
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-linear-gradient(top, rgb(57, 73, 132), rgb(204, 102, 110) 60%, rgb(238, 182, 109));
+}
+.line1 {
+    height: 45%;
+}
+.line1>div {
+    padding: 5px 10px;
+    box-sizing: border-box;
+    height: 100%;
+    text-align: center;
+}
+
+
+/*详情页样式*/
+.clearFix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.Col {
+    height: 100%;
+    cursor: pointer;
+}
+.S, .N {
+    color: #fff
+}
+.S {
+    height: 100% !important;
+}
+.S p {
+    margin: 0;
+}
+.todayDeatil {
+    padding-top: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.todayTempStyle {
+    position: absolute;
+    top: 30%;
+    left: 62%;
+    font-size : 15px;
+}
+.yourCity {
+    position: absolute;
+    right: 10px;
+    text-align: right;
+    font-size: 24px;
+    width: 30px;
+    top: -53px
+}
+.mCity {
+    position: absolute;
+    right: 10px;
+    text-align: right;
+    font-size: 16px;
+    width: 30px;
+    top: -45px
+}
+.modify {
+    font-size: 16px!important;
+}
+.todayTemp {
+    float: left;
+    width: 100px;
+    margin-right: 10px;
+    margin-left: calc( 50% - 90px );
+    color: #fff;
+    font:  80px/80px '微软雅黑';
+    text-align: right;
+}
+.S .todaySubDetail {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 5px 0;
+}
+.todayAir {
+    display: inline-block;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+.limitWind {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.alertWrapper {
+    cursor: pointer;
+    background-color: rgba(0,0,0,.1);
+}
+.alert {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #FF8111;
+    width: 90%;
+    padding: 5px 0;
+    margin: 0 auto;
+}
+#qhbar {
+    position: absolute;
+    width: 90%;
+    height: 50%;
+    left: 5%;
+    bottom: 0
+}
+#mqhbar {
+    position: absolute;
+    width: 100%;
+    height: 45%;
+    left: 0;
+    bottom: 0;
+}
+#mqhbar td:nth-of-type(3n-2) {
+    width: 55px;
+}
+.ant-tabs-bar {
+    margin: 0;
+}
+.ant-tabs-content {
+    height: calc(100% - 50px);
+}
+.ant-tabs-nav {
+    font-size: 16px!important;
+    color: #d5d6d3 !important;
+}
+.ant-tabs-nav .ant-tabs-tab:hover,.ant-tabs-nav .ant-tabs-tab-active {
+    color: #fff;
+}
+.ant-table-thead {
+    display: none;
+}
+.ant-pagination-item-active {
+    border: none
+}
+.ant-pagination-item {
+    border:none;
+    background-color: transparent;
+}
+.ant-table {
+    color: #fff;
+    font-size: 18px;
+}
+.ant-pagination-item>a {
+    color: #fff;
+}
+.ant-table-expanded-row:hover > td {
+   color: #000;
+ }
+.otherEntrance {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 99;
+}
+.secEntrance .homeEntrance {
+    left: calc( 50% - 110px);
+}
+.secEntrance .homeEntrance>.ant-input-search {
+    width: 100%!important;
+}
+.mline1 {
+    height: 25%;
+    top: 35px
+}
+.mline1>.ant-col-24 {
+    height: 100%;
+}
+.mline3 {
+    height: 29%;
+}
+.mline3 p{
+    line-height: 1.5;
+    height: 37.5%;
+    margin-bottom: 0;
+}
+.cities {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-left: 50px;
+}
+.mtodayTemp{
+    float: left;
+    width: 100px;
+    margin-right: 10px;
+    color: #fff;
+    font:  80px/80px '微软雅黑';
+}
+.mtodayTempStyle {
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    font-size : 15px;
+}
+.minfo {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    text-align: right;
+}
+.mmbtn {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}

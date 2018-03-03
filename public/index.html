@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <style media="screen">
+        #canvas { position: absolute; top: 0; left: 0; }
+    </style>
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.4&key=88d259ec1d02d8b2be0bdf2c186ec50d&plugin=AMap.CitySearch"></script>
+
+    <script src="http://www.qianhaogege.com/artwork/1/dbApi/rainyday.0.1.1.min.js"></script>
+    <script>
+        function demo() {
+            if(window.notMobile){
+                return;
+            }
+            if(window.location.pathname!=='/'){
+                return
+            }
+            window.engine = new RainyDay('canvas', 'background', window.innerWidth, window.innerHeight);
+            window.engine.gravity = engine.GRAVITY_NON_LINEAR;
+            window.engine.trail = engine.TRAIL_DROPS;
+
+            window.engine.rain([
+                window.engine.preset(0, 2, 500)
+            ]);
+
+            window.engine.rain([
+                window.engine.preset(3, 3, 0.88),
+                window.engine.preset(5, 5, 0.9),
+                window.engine.preset(6, 2, 1),
+            ], 100);
+        }
+    </script>
+</head>
+<body onload="demo();">
+<div style="z-index: 999;position:absolute;left:0;top:0;width:100%;height:100%" id="root"></div>
+
+<img id="background" style="display: none;" src="./img/night.jpg" alt="background" />
+<div id="cholder" >
+    <canvas id="canvas"></canvas>
+</div>
+
+</body>
+</html>
